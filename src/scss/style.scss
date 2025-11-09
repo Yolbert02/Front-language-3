@@ -1,8 +1,25 @@
 @use "@coreui/coreui/scss/coreui" as * with ( 
   $enable-deprecation-messages: false,
+  $primary: #003B5C,
+  $body-bg: #C9A66B,
 );
 @use "@coreui/chartjs/scss/coreui-chartjs";
 @use "vendors/simplebar";
+
+:root{
+  --cui-tertiary-bg:#D2B48C;
+};
+
+.sidebar, .nav-link, .active {
+    --cui-sidebar-bg: #003B5C;
+    --cui-sidebar-nav-link-active-color: #C2B280;
+    --cui-sidebar-nav-link-hover-bg: #C2B280;
+    --cui-body-bg: #003B5C;
+}
+
+.table{
+  --cui-table-bg-type: #C2B280;
+}
 
 body {
   background-color: var(--cui-tertiary-bg);
